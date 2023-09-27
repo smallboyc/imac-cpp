@@ -1,0 +1,16 @@
+# Nous voulons un cmake "récent" pour utiliser les dernières fonctionnalités
+cmake_minimum_required(VERSION 3.0)
+
+# La version du C++ que l'on souhaite utiliser (dans notre cas C++17)
+set(CMAKE_CXX_STANDARD 17)
+
+# Le nom du projet
+project(TD02)
+
+add_executable(exo01 src/exo01.cpp)
+add_executable(exo02 src/exo02.cpp)
+add_executable(exo03 src/exo03.cpp)
+add_executable(exo04 src/exo04.cpp)
+add_executable(exo05 src/exo05.cpp)
+add_executable(exo06 src/exo06.cpp)
+add_executable(exo07 src/exo07.cpp)
