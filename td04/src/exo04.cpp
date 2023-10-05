@@ -3,38 +3,50 @@
 
 int main()
 {
-    float money{.0f};
-    std::vector<int> centimes{1, 2, 5, 10, 20, 50};
-    std::vector<int> euros{1, 2};
-    std::vector<int> billets{5, 10, 20, 50, 100, 200, 500};
-    std::vector<int> potentiels_billets{};
-    int result_billets{0};
-    std::cout << "Saisissez un montant en euros : ";
-    std::cin >> money;
-    std::cin.clear();
-    std::cin.ignore(255, '\n');
-    while (money > 0)
+    float montant;
+    int reste;
+    int montant_part_ent;
+    int montant_decimal;
+
+    std::vector<int> billets{500, 200, 100, 50, 20, 10, 5};
+    std::vector<int> piece{2, 1};
+    std::vector<int> centime{50, 20, 10, 5, 2, 1};
+
+    std::cout << "Combien d'argent voulez-vous rendre ?" << std::endl;
+    std::cin >> montant;
+
+    montant_part_ent = static_cast<int>(montant);
+    montant_decimal = (montant - montant_part_ent) * 100;
+
+    reste = montant_part_ent;
+
+    for (int i{0}; i < billets.size(); i++)
     {
-        for (int i{0}; i < billets.size(); i++)
-        {
-            if (static_cast<int>(money) / billets[i] >= 1)
-            {
-                potentiels_billets.push_back(billets[i]);
-            }
-        };
+        int result{0};
+        result = reste / billets[i];
+        reste = reste % billets[i];
+        if (result != 0)
+            std::cout << result << " billets de " << billets[i] << " euros" << std::endl;
+    }
 
-        for (int i{0}; i < potentiels_billets.size(); i++)
-        {
-            if (potentiels_billets[i] < potentiels_billets[i + 1])
-                result_billets = potentiels_billets[i + 1];
+    for (int i{0}; i < piece.size(); i++)
+    {
+        int result{0};
+        result = reste / piece[i];
+        reste = reste % piece[i];
+        if (result != 0)
+            std::cout << result << " pieces de " << piece[i] << " euros" << std::endl;
+    }
 
-            // std::cout << potentiels_billets[i] << std::endl;
-        }
-        if (static_cast<int>(money / result_billets) != 0) // probleme d'affichage avec "0 billets de .... => force une condition"
-            std::cout << static_cast<int>(money / result_billets) << " billet(s) de " << result_billets << std::endl;
-        money = static_cast<int>(money) % result_billets;
-        if (money == 0)
-            break;
+    reste = montant_decimal;
+
+    for (int i{0}; i < centime.size(); i++)
+    {
+        int result{0};
+        result = reste / centime[i];
+        reste = reste % centime[i];
+        if (result != 0)
+            std::cout << result << " pieces de " << centime[i] << " centimes" << std::endl;
     }
 
     return 0;

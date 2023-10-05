@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-void checkInputUser(unsigned int &nb)
+void checkInputUser(long int &nb)
 {
     while (!(std::cin >> nb) || nb < 1000000)
     {
@@ -13,7 +13,7 @@ void checkInputUser(unsigned int &nb)
 
 int main()
 {
-    unsigned int number{0};
+    long int number{0};
     int total{0};
     std::string mostCurrentNumber{""};
     std::cout << "Entrez un nombre positif superieur a 1 000 000 : ";

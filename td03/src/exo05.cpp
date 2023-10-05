@@ -18,7 +18,7 @@ int main()
         temperatureEbullition -= altitude / 300;
     if (salt)
         temperatureEbullition += 1.5;
-    time = temperatureEbullition / 10;
+    time = (temperatureEbullition - temperatureAmbiante) / 10;
     std::cout << "Temperature d'ebullition : " << temperatureEbullition << "degres celcius." << std::endl;
     std::cout << "Temps d'ebullition : " << time << " min." << std::endl;
     return 0;
