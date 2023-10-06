@@ -30,9 +30,6 @@
 //     return 0;
 // }
 
-
-
-
 // Récursif classique (référence)
 
 void suite(int &un, int &vn, int &i)
