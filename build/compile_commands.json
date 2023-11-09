@@ -1,0 +1,44 @@
+[
+{
+  "directory": "D:/imac-cpp/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\exo01.dir\\src\\exo01.cpp.obj -c D:\\imac-cpp\\td02\\src\\exo01.cpp",
+  "file": "D:/imac-cpp/td02/src/exo01.cpp",
+  "output": "CMakeFiles/exo01.dir/src/exo01.cpp.obj"
+},
+{
+  "directory": "D:/imac-cpp/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\exo02.dir\\src\\exo02.cpp.obj -c D:\\imac-cpp\\td02\\src\\exo02.cpp",
+  "file": "D:/imac-cpp/td02/src/exo02.cpp",
+  "output": "CMakeFiles/exo02.dir/src/exo02.cpp.obj"
+},
+{
+  "directory": "D:/imac-cpp/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\exo03.dir\\src\\exo03.cpp.obj -c D:\\imac-cpp\\td02\\src\\exo03.cpp",
+  "file": "D:/imac-cpp/td02/src/exo03.cpp",
+  "output": "CMakeFiles/exo03.dir/src/exo03.cpp.obj"
+},
+{
+  "directory": "D:/imac-cpp/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\exo04.dir\\src\\exo04.cpp.obj -c D:\\imac-cpp\\td02\\src\\exo04.cpp",
+  "file": "D:/imac-cpp/td02/src/exo04.cpp",
+  "output": "CMakeFiles/exo04.dir/src/exo04.cpp.obj"
+},
+{
+  "directory": "D:/imac-cpp/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\exo05.dir\\src\\exo05.cpp.obj -c D:\\imac-cpp\\td02\\src\\exo05.cpp",
+  "file": "D:/imac-cpp/td02/src/exo05.cpp",
+  "output": "CMakeFiles/exo05.dir/src/exo05.cpp.obj"
+},
+{
+  "directory": "D:/imac-cpp/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\exo06.dir\\src\\exo06.cpp.obj -c D:\\imac-cpp\\td02\\src\\exo06.cpp",
+  "file": "D:/imac-cpp/td02/src/exo06.cpp",
+  "output": "CMakeFiles/exo06.dir/src/exo06.cpp.obj"
+},
+{
+  "directory": "D:/imac-cpp/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\exo07.dir\\src\\exo07.cpp.obj -c D:\\imac-cpp\\td02\\src\\exo07.cpp",
+  "file": "D:/imac-cpp/td02/src/exo07.cpp",
+  "output": "CMakeFiles/exo07.dir/src/exo07.cpp.obj"
+}
+]

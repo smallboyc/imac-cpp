@@ -1,25 +1,33 @@
 #include <iostream>
 
-int factorial(int number)
+// int factorial(int const number)
+// {
+//     static int i{1};
+//     static int result{1};
+//     if (i <= number)
+//     {
+//         result *= i;
+//         i++;
+//         factorial(number);
+//     }
+//     else
+//     {
+//         return result;
+//     }
+// }
+
+int factorial(int const number)
 {
-    static int i{1};
-    static int result{1};
-    if (i <= number)
-    {
-        result *= i;
-        i++;
-        factorial(number);
-    }
+    if (number > 1)
+        return factorial(number - 1) * number;
     else
-    {
-        return result;
-    }
+        return 1;
 }
 
 int main()
 {
     int number{0};
-    int result{1};
+    // int result{1};
     std::cout << "Entrez un entier positif : ";
     while (!(std::cin >> number) || number <= 0)
     {

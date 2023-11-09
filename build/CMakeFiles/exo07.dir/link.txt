@@ -1,0 +1,3 @@
+C:\mingw64\bin\cmake.exe -E rm -f CMakeFiles\exo07.dir/objects.a
+C:\mingw64\bin\ar.exe qc CMakeFiles\exo07.dir/objects.a @CMakeFiles\exo07.dir\objects1.rsp
+C:\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\exo07.dir/objects.a -Wl,--no-whole-archive -o exo07.exe -Wl,--out-implib,libexo07.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\exo07.dir\linkLibs.rsp

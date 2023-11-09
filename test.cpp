@@ -44,4 +44,13 @@
 //     return 0;
 // }
 
-
+int test(int michel)
+{
+    michel++;
+    return michel
+}
+int main()
+{
+    int a{24};
+    return 0;
+}

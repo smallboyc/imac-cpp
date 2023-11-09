@@ -35,5 +35,12 @@ int main()
         std::cout << resultTable[i] << ", ";
     }
 
+    // Itératif
+    //  for (int i{0}; i < number; i++)
+    //  {
+    //      resultTable.push_back(resultTable[i] + resultTable[i + 1]);
+    //      std::cout << resultTable[i] << ", ";
+    //  }
+
     return 0;
 }
